@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chaoyang805.chaptertwo_ipc.activity.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterSecond"
+        android:text="SecondActivity"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        android:layout_marginTop="32dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        tools:layout_constraintRight_creator="1"/>
+
+    <Button
+        android:id="@+id/btnThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterThird"
+        android:text="ThirdActivity"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/btnSecond"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        tools:layout_constraintRight_creator="1"/>
+
+    <Button
+        android:id="@+id/btnActivityMessenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterMessengerActivity"
+        android:text="MessengerActivity"
+        android:textAllCaps="false"
+
+        tools:text="MessengerActivity"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/btnThird"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        tools:layout_constraintRight_creator="1"/>
+
+    <Button
+        android:id="@+id/btnBookActivity"
+        android:onClick="enterBookActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BookActivity"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/btnActivityMessenger"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        tools:layout_constraintRight_creator="1"/>
+
+    <Button
+        android:text="ProviderActivity"
+        android:onClick="enterProviderActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnProviderActivity"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/btnBookActivity"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        tools:layout_constraintRight_creator="1"/>
+
+    <Button
+        android:text="BinderPoolActivity"
+        android:textAllCaps="false"
+        android:onClick="enterBinderPoolActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        app:layout_constraintTop_toBottomOf="@+id/btnProviderActivity"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"/>
+
+</android.support.constraint.ConstraintLayout>
