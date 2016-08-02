@@ -1,18 +1,14 @@
 package com.chaoyang805.chaptertwo_ipc.aidl;
 
 import android.os.Binder;
-import android.os.Bundle;
 import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
-import android.support.v4.app.BundleCompat;
-import android.util.Log;
 
 import com.chaoyang805.chaptertwo_ipc.Book;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -54,11 +50,11 @@ public class BookManagerImpl extends Binder implements IBookManager {
     @Override
     protected boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException {
         switch (code) {
-            case INTERFACE_TRANSACTION:{
+            case INTERFACE_TRANSACTION: {
                 reply.writeString(DESCRIPTOR);
                 return true;
             }
-            case TRANSACTION_getBookList:{
+            case TRANSACTION_getBookList: {
 
                 data.enforceInterface(DESCRIPTOR);
                 List<Book> bookList = this.getBookList();
@@ -79,7 +75,7 @@ public class BookManagerImpl extends Binder implements IBookManager {
                 reply.writeNoException();
                 return true;
             }
-            case TRANSACTION_registerListener:{
+            case TRANSACTION_registerListener: {
 
                 data.enforceInterface(DESCRIPTOR);
                 IOnNewBookArrivedListener arg0;
@@ -176,7 +172,7 @@ public class BookManagerImpl extends Binder implements IBookManager {
         public void registerListener(IOnNewBookArrivedListener listener) throws RemoteException {
             Parcel data = Parcel.obtain();
             Parcel reply = Parcel.obtain();
-            try{
+            try {
                 data.writeInterfaceToken(DESCRIPTOR);
                 data.writeStrongBinder(listener != null ? listener.asBinder() : null);
                 mRemote.transact(TRANSACTION_registerListener, data, reply, 0);

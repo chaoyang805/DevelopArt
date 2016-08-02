@@ -8,10 +8,12 @@ import android.os.RemoteException;
 import android.support.annotation.Nullable;
 
 import com.chaoyang805.chaptertwo_ipc.Book;
+import com.chaoyang805.chaptertwo_ipc.IBookManager;
 import com.chaoyang805.chaptertwo_ipc.aidl.BookManagerImpl;
 import com.chaoyang805.chaptertwo_ipc.aidl.IOnNewBookArrivedListener;
 import com.chaoyang805.chaptertwo_ipc.aidl.IOnNewBookArrivedListenerImpl;
 
+import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 

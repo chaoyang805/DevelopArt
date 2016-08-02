@@ -35,8 +35,7 @@
             android:name=".service.MessengerService"
             android:process=":remote"/>
 
-        <service
-            android:name=".service.BookManagerService"
+        <service android:name=".service.BookManagerService"
             android:process=":remote"/>
         <service android:name=".bindpool.BinderPoolService"
             android:process=":remote"/>

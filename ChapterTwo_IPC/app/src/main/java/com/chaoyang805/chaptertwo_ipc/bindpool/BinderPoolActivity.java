@@ -6,7 +6,6 @@ import android.os.RemoteException;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
 
 import com.chaoyang805.chaptertwo_ipc.Debugable;
 import com.chaoyang805.chaptertwo_ipc.R;
@@ -20,6 +19,7 @@ public class BinderPoolActivity extends AppCompatActivity implements Debugable {
     private ISecurityCenter mSecurityCenter;
 
     private ICompute mCompute;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

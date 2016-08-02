@@ -10,6 +10,7 @@ import android.os.RemoteException;
 import android.util.Log;
 
 import com.chaoyang805.chaptertwo_ipc.Debugable;
+import com.chaoyang805.chaptertwo_ipc.IBookManager;
 
 import java.util.concurrent.CountDownLatch;
 

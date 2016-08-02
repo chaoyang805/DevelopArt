@@ -40,6 +40,7 @@ public class BookManagerActivity extends AppCompatActivity {
             mBookManager = manager;
             try {
                 mBookManager.registerListener(mListener);
+
                 List<Book> books = manager.getBookList();
                 Log.d(TAG, "query book list, list type:" + books.getClass().getCanonicalName());
                 Log.d(TAG, "query book list:" + books.get(0).bookName);
