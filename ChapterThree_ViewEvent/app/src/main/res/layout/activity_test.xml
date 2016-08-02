@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp">
+    <Button
+        android:id="@+id/button1"
+        android:text="MovingButton"
+        android:textAllCaps="false"
+        android:background="#ff0000"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+
+    <com.chaoyang805.chapterthree_viewevent.ui.TestButton
+        android:id="@+id/button2"
+        android:text="我可以滑动"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="A"/>
+</LinearLayout>
