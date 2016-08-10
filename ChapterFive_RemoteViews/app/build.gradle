@@ -4,7 +4,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
     defaultConfig {
-        applicationId "com.chaoyang805.chapterthree_viewevent"
+        applicationId "com.chaoyang805.chapterfive_remoteviews"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
@@ -17,7 +17,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
