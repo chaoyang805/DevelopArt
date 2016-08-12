@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.chaoyang805.chaptersix_drawable.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/levellist_drawable"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:background="@drawable/statelist_drawable"
+        android:hint="hahaha"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:background="@drawable/statelist_drawable"
+        android:hint="hehe"/>
+
+    <View
+        android:id="@+id/transition_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/transition_drawable"/>
+
+    <Button
+
+        android:id="@+id/btn_transition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="transitionView"
+        android:text="transitionDrawable"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:id="@+id/clip_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/clip_drawable"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_reduce"
+            android:text="减少level"
+            android:onClick="reduceLevel"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:onClick="addLevel"
+            android:background="@drawable/statelist_drawable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="增加level"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_ripple"
+        android:clickable="true"
+        android:background="@drawable/ripple_drawable"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <!--<View-->
+    <!--android:id="@+id/scale_view"-->
+    <!--android:background="@drawable/scale_drawable"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
+</LinearLayout>
