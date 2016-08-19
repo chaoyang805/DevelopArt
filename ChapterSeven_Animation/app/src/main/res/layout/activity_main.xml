@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chaoyang805.chapterseven_animation.MainActivity"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/animatable_view"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        />
+    <View
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/frame_animation_view"
+        android:background="@drawable/frame_animation"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="animateView"
+        android:text="Animate View"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="rotate3D"
+        android:text="Animate View by Code"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/btn_show_layout_anim"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:onClick="showLayoutAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Layout Animation"
+        />
+
+    <Button
+        android:id="@+id/btn_obj_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="ObjectAnimatorActivity"
+        android:onClick="enterObjectAniamtorActivity"
+        android:textAllCaps="false"
+        />
+</LinearLayout>
